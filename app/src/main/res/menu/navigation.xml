@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dzaxItem"
+        android:icon="@mipmap/dzax"
+        android:title="Songs"/>
+ <item
+        android:id="@+id/ajItem"
+        android:icon="@mipmap/aj"
+        android:title="Songs"/>
+
+    <item
+        android:id="@+id/navigation_albums"
+        android:icon="@mipmap/metka"
+        android:title="Albums"/>
+
+    <item
+        android:id="@+id/navigation_artists"
+        android:icon="@mipmap/plusik"
+        android:title="Artists"/>
+</menu>

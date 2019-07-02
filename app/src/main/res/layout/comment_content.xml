@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/real"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/com_user_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:src="@mipmap/person"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/com_user_img"
+            android:background="#F5F5F5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/com_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arman is the best"
+                android:textColor="@color/material_blue_grey_80"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/com_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genius code"
+                android:textSize="17dp"
+
+                />
+
+            <TextView
+                android:id="@+id/com_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genius code"
+                android:textSize="17dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/comm_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

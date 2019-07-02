@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.main;
+package org.citybugs.citybugs_new.ui.main;
 
 import androidx.arch.core.util.Function;
 import androidx.lifecycle.LiveData;

@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.citybugs_new;
 
 import org.junit.Test;
 

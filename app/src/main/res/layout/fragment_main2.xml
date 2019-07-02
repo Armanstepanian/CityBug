@@ -8,22 +8,20 @@
     tools:context=".fragment1">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="377dp"
-        android:layout_height="510dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="353dp"
+        android:layout_height="462dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="462dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -31,8 +29,8 @@
 
             <EditText
                 android:id="@+id/email2"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_width="330dp"
+                android:layout_height="47dp"
 
                 android:layout_marginStart="6dp"
                 android:layout_marginLeft="6dp"
@@ -40,9 +38,11 @@
                 android:layout_marginRight="6dp"
                 android:layout_marginBottom="22dp"
                 android:drawableLeft="@mipmap/mail"
+                android:drawablePadding="10dp"
                 android:ems="10"
+
+                android:hint="email"
                 android:inputType="textPersonName"
-                android:text="email"
                 app:layout_constraintBottom_toTopOf="@+id/pass2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -50,8 +50,8 @@
 
             <EditText
                 android:id="@+id/pass2"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_width="330dp"
+                android:layout_height="47dp"
 
                 android:layout_marginStart="7dp"
                 android:layout_marginLeft="7dp"
@@ -59,10 +59,11 @@
                 android:layout_marginRight="7dp"
                 android:layout_marginBottom="36dp"
                 android:drawableLeft="@mipmap/key"
-                android:drawableRight="@mipmap/pass"
+
+                android:drawablePadding="10dp"
                 android:ems="10"
+                android:hint="Password"
                 android:inputType="textPassword"
-                android:text="Password"
                 app:layout_constraintBottom_toTopOf="@+id/signin"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -70,16 +71,16 @@
 
             <Button
                 android:id="@+id/fcbButton2"
-                android:clickable="true"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="19dp"
-                android:layout_marginLeft="19dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="19dp"
-                android:layout_marginRight="19dp"
-                android:layout_marginBottom="25dp"
+                android:layout_width="299dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="40dp"
                 android:background="@mipmap/fcb"
+                android:clickable="true"
                 app:layout_constraintBottom_toTopOf="@+id/textView2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -91,16 +92,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginLeft="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginBottom="40dp"
                 android:text="------------------------------------or------------------------------------"
                 app:layout_constraintBottom_toTopOf="@+id/lastName"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/fcbButton2" />
 
             <EditText
                 android:id="@+id/fisrtName"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_width="330dp"
+                android:layout_height="47dp"
 
                 android:layout_marginStart="11dp"
                 android:layout_marginLeft="11dp"
@@ -108,9 +112,11 @@
                 android:layout_marginRight="11dp"
                 android:layout_marginBottom="16dp"
                 android:drawableLeft="@mipmap/person"
+
+                android:drawablePadding="10dp"
                 android:ems="10"
+                android:hint="fisrt name"
                 android:inputType="textPersonName"
-                android:text="fisrtName"
                 app:layout_constraintBottom_toTopOf="@+id/email2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -118,8 +124,8 @@
 
             <EditText
                 android:id="@+id/lastName"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_width="330dp"
+                android:layout_height="47dp"
 
                 android:layout_marginStart="11dp"
                 android:layout_marginLeft="11dp"
@@ -127,9 +133,11 @@
                 android:layout_marginRight="11dp"
                 android:layout_marginBottom="18dp"
                 android:drawableLeft="@mipmap/person"
+
+                android:drawablePadding="10dp"
                 android:ems="10"
+                android:hint="lastName"
                 android:inputType="textPersonName"
-                android:text="lastName"
                 app:layout_constraintBottom_toTopOf="@+id/fisrtName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -148,8 +156,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/pass2" />
+                app:layout_constraintStart_toStartOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

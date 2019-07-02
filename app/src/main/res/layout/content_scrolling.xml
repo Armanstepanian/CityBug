@@ -2,8 +2,154 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".ScrollingActivity"
-    tools:showIn="@layout/activity_scrolling"/>
+    tools:context=".ScrollingActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/real"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@mipmap/person"
+                android:background="@drawable/circle"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arman is the best"
+                    android:textColor="@color/material_blue_grey_80"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Genius code"
+                    android:textSize="17dp"
+
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/real"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:text="Status"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/profPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Status"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/panda" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profPic"
+            android:layout_marginTop="36dp">
+
+            <ImageButton
+                android:id="@+id/likeButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentLeft="true"
+                android:background="@mipmap/like" />
+
+            <TextView
+                android:id="@+id/likeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/likeButton"
+                android:text="10"
+
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:id="@+id/shareButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/likeText"
+                android:background="@mipmap/share" />
+
+            <TextView
+                android:id="@+id/shareText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/shareButton"
+
+                android:text="10"
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:id="@+id/commentButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/shareText"
+                android:background="@mipmap/com" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/commentButton"
+                android:text="10"
+                android:textSize="13sp" />
+            <TextView
+                android:text="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id = "@+id/id_Scroll"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.core.widget.NestedScrollView>
